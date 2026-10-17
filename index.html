@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethiopia Smart Education</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      color: #222;
+    }
+
+    header {
+      background: #075e35;
+      color: white;
+      text-align: center;
+      padding: 28px 12px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 27px;
+    }
+
+    nav {
+      background: #064426;
+      padding: 14px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 35px 15px;
+      background: white;
+    }
+
+    .hero h2 {
+      color: #075e35;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px 12px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 3px 10px #0001;
+    }
+
+    .card h3 {
+      color: #075e35;
+    }
+
+    button {
+      background: #075e35;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0b8048;
+    }
+
+    footer {
+      background: #064426;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🇪🇹 ETHIOPIA SMART EDUCATION</h1>
+    <p>Learn Today, Lead Tomorrow!</p>
+    <p>ዛሬ ተማር፣ ነገ ምራ!</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Welcome to Smart Education!</h2>
+    <p>Free learning resources for Ethiopian students.</p>
+    <p>ለኢትዮጵያ ተማሪዎች የትምህርት መድረክ።</p>
+    <a href="#courses">
+      <button>Explore Courses</button>
+    </a>
+  </section>
+
+  <main class="container" id="courses">
+    <h2>📚 Grade 9 & 10 Courses</h2>
+
+    <div class="courses">
+
+      <div class="card">
+        <h3>🇬🇧 English</h3>
+        <p>Grammar, Vocabulary and Speaking</p>
+        <button onclick="showMessage('English')">View Lessons</button>
+      </div>
+
+      <div class="card">
+        <h3>➗ Mathematics</h3>
+        <p>Algebra, Geometry and more</p>
+        <button onclick="showMessage('Mathematics')">View Lessons</button>
+      </div>
+
+      <div class="card">
+        <h3>⚛️ Physics</h3>
+        <p>Understand the physical world</p>
+        <button onclick="showMessage('Physics')">View Lessons</button>
+      </div>
+
+      <div class="card">
+        <h3>🧪 Chemistry</h3>
+        <p>Matter, atoms and reactions</p>
+        <button onclick="showMessage('Chemistry')">View Lessons</button>
+      </div>
+
+      <div class="card">
+        <h3>🧬 Biology</h3>
+        <p>Explore living organisms</p>
+        <button onclick="showMessage('Biology')">View Lessons</button>
+      </div>
+
+      <div class="card">
+        <h3>🌍 Geography</h3>
+        <p>Explore Earth and its environment</p>
+        <button onclick="showMessage('Geography')">View Lessons</button>
+      </div>
+
+      <div class="card">
+        <h3>📜 History</h3>
+        <p>Learn from the past</p>
+        <button onclick="showMessage('History')">View Lessons</button>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="container" id="about">
+    <h2>About Us | ስለ እኛ</h2>
+    <p>
+      Ethiopia Smart Education aims to help Ethiopian students
+      learn through accessible educational resources.
+    </p>
+    <p>
+      ዓላማችን ለኢትዮጵያ ተማሪዎች ጥራት ያለው ትምህርት
+      ማቅረብ ነው።
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Ethiopia Smart Education</p>
+    <p>Education for Everyone 🇪🇹</p>
+  </footer>
+
+  <script>
+    function showMessage(subject) {
+      alert(
+        subject +
+        " lessons are coming soon! / የ" +
+        subject +
+        " ትምህርቶች በቅርቡ ይጨመራሉ!"
+      );
+    }
+  </script>
+
+</body>
+</html>
